@@ -1,0 +1,325 @@
+/* Keep the DOM reading order: result first, optional tools after the map. */
+.network-result-v4__sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-width: 0;
+  align-self: stretch;
+}
+.network-design-page.network-wizard
+  .network-wizard__shell.is-result
+  .network-result-v4__sidebar
+  .network-result-v4__inspector.network-zone-card {
+  flex: 0 0 auto;
+  height: auto;
+}
+.network-territory-wind {
+  flex: 1;
+  padding: 16px;
+  background: #fff;
+  border: 1px solid #dce6f3;
+  border-radius: 12px;
+  min-width: 0;
+}
+.network-territory-wind .compact-wind-rose {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  gap: 12px;
+}
+.network-territory-wind .compact-wind-rose__header {
+  padding: 0;
+  border: 0;
+}
+.network-territory-wind .compact-wind-rose__header h4 {
+  font-size: 14px;
+  line-height: 1.4;
+}
+.network-design-page .network-territory-wind .compact-wind-rose__viz-row {
+  grid-template-columns: minmax(0, 1fr) !important;
+  order: 2;
+  gap: 8px;
+}
+.network-design-page .network-territory-wind .compact-wind-rose__chart {
+  width: 100%;
+  min-width: 0;
+  height: 230px;
+}
+.network-territory-wind .compact-wind-rose__legend {
+  border: 0;
+  padding: 8px 0;
+}
+.network-territory-wind .compact-wind-rose__legend > div {
+  display: flex;
+  gap: 7px 12px;
+  flex-wrap: wrap;
+}
+.network-territory-wind .compact-wind-rose__metrics {
+  order: 1;
+  grid-template-columns: 1.4fr 1fr 1fr;
+}
+.network-territory-wind .compact-wind-rose__metrics span {
+  white-space: normal;
+  font-size: 10px;
+}
+.network-territory-wind .compact-wind-rose__metrics strong {
+  font-size: 16px;
+}
+.network-territory-wind-details > div {
+  display: inline-block;
+  width: min(100%, 340px);
+  margin: 12px 16px 0 0;
+  vertical-align: top;
+}
+.network-territory-wind-details .compact-wind-rose__viz-row {
+  grid-template-columns: minmax(0, 1fr);
+}
+.network-design-page .network-result-v4__actions {
+  align-items: center;
+}
+.network-design-page .network-result-v4__actions .button {
+  min-height: 38px;
+  height: auto;
+  padding: 8px 12px;
+  font-size: 12px;
+}
+.network-result-v4 [hidden] {
+  display: none !important;
+}
+.network-design-page.network-wizard .network-result-v4__kpis {
+  grid-template-columns: 1.4fr 1fr 1fr;
+}
+.network-result-v4__report-action {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: flex-end;
+}
+.network-result-v4__save-status {
+  font-size: 11px;
+  color: #55728e;
+  max-width: 260px;
+  line-height: 1.4;
+}
+.network-result-v4__save-status.is-error {
+  color: #a33d3d;
+}
+@media (max-width: 760px) {
+  .network-design-page.network-wizard .network-result-v4__kpis {
+    grid-template-columns: 1fr;
+  }
+}
+.network-design-page.network-wizard .network-zone-card__body {
+  overflow: visible;
+  flex: 1 0 auto;
+}
+@media (min-width: 1091px) {
+  .network-design-page.network-wizard .network-result-v4__workspace {
+    align-items: stretch;
+  }
+  .network-design-page.network-wizard .network-result-v4__map-column {
+    display: flex;
+    flex-direction: column;
+  }
+  .network-design-page.network-wizard
+    .network-wizard__shell.is-result
+    .network-result-v4__map-shell {
+    flex: 1;
+    height: auto;
+    min-height: max(480px, calc(100dvh - 250px));
+  }
+  .network-design-page.network-wizard
+    .network-wizard__shell.is-result
+    .network-result-v4__inspector.network-zone-card {
+    align-self: stretch;
+    height: auto;
+    min-height: 0;
+    max-height: none;
+    overflow: visible;
+  }
+}
+.network-design-page.network-wizard .network-wizard__shell.is-result {
+  display: block;
+}
+.network-design-page.network-wizard
+  .network-wizard__shell.is-result
+  > .network-wizard__content,
+.network-design-page.network-wizard
+  .network-wizard__shell.is-result
+  .network-result-v4 {
+  display: block;
+  min-width: 0;
+}
+.network-result-tools {
+  margin: 20px;
+  padding: 20px;
+  background: #fff;
+  border: 1px solid #dce6f3;
+  border-radius: 12px;
+  color: #183353;
+  font-size: 13px;
+  scroll-margin-top: 16px;
+}
+.network-result-tools > header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+.network-result-tools h3 {
+  margin: 0 0 6px;
+  font-size: 18px;
+}
+.network-result-tools > header p {
+  margin: 0;
+  color: #667b95;
+  font-size: 12px;
+}
+.network-result-tools__navigation {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+.network-result-tools__navigation > button {
+  min-width: 0;
+  padding: 14px 16px;
+  color: #23466e;
+  background: #f8fbff;
+  border: 1px solid #dce6f3;
+  border-radius: 8px;
+  text-align: left;
+}
+.network-result-tools__navigation > button.is-active {
+  color: #185fbf;
+  border-color: #80aff0;
+  background: #edf4ff;
+}
+.network-result-tools__navigation strong {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+.network-result-tools__navigation span {
+  display: block;
+  color: #667b95;
+  font-size: 12px;
+  line-height: 1.5;
+}
+.network-result-tools [hidden] {
+  display: none !important;
+}
+.network-design-page .network-result-tools .network-planning-lab,
+.network-design-page .network-result-tools .network-planning-diagnostics {
+  margin: 20px 0 0;
+  padding: 20px 0 0;
+  border: 0;
+  border-top: 1px solid #e2eaf4;
+  border-radius: 0;
+  box-shadow: none;
+}
+.network-result-tools__editing {
+  margin: 12px 20px;
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  color: #245dae;
+  background: #edf4ff;
+  border: 1px solid #c8ddfa;
+  border-radius: 8px;
+}
+.network-result-tools__editing strong,
+.network-result-tools__editing span {
+  display: block;
+  font-size: 13px;
+}
+.network-result-tools__editing span {
+  margin-top: 4px;
+  color: #557294;
+  font-size: 12px;
+}
+.network-result-tools__changed {
+  grid-column: 1 / -1;
+  margin: 0;
+  padding: 10px 14px;
+  background: #fff8e9;
+  color: #77551b;
+  font-size: 12px;
+  line-height: 1.5;
+}
+.network-run-passport {
+  padding-top: 20px;
+  margin-top: 20px;
+  border-top: 1px solid #e2eaf4;
+}
+.network-run-passport dl {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px 24px;
+  margin: 0 0 20px;
+}
+.network-run-passport dl > div {
+  min-width: 0;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e2eaf4;
+}
+.network-run-passport dt {
+  color: #667b95;
+  font-size: 12px;
+}
+.network-run-passport dd {
+  margin: 6px 0 0;
+  font-size: 13px;
+  font-weight: 600;
+  overflow-wrap: anywhere;
+}
+.network-run-passport details {
+  margin-top: 12px;
+  padding: 14px;
+  border: 1px solid #e0e8f2;
+  border-radius: 8px;
+}
+.network-run-passport summary {
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+}
+.network-run-passport pre {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  max-height: 420px;
+  overflow: auto;
+  font-size: 12px;
+}
+.network-result-tools__table {
+  overflow-x: auto;
+  margin-top: 14px;
+}
+.network-result-tools__table table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 12px;
+}
+.network-result-tools__table th,
+.network-result-tools__table td {
+  padding: 10px;
+  border-bottom: 1px solid #e2eaf4;
+}
+@media (max-width: 760px) {
+  .network-result-tools {
+    margin: 14px;
+    padding: 16px;
+  }
+  .network-result-tools__navigation,
+  .network-run-passport dl {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .network-result-tools > header,
+  .network-result-tools__editing {
+    flex-wrap: wrap;
+  }
+}

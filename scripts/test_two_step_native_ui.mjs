@@ -1,0 +1,21 @@
+import {pathToFileURL} from 'node:url';
+import {renderToString} from 'react-dom/server';
+import React from 'react';
+import assert from 'node:assert/strict';
+import fs from 'node:fs/promises';
+import path from 'node:path';
+const stage=path.resolve(import.meta.dirname,'..'),native=path.resolve(stage,'../frontend');
+globalThis.window={URL:globalThis.URL,localStorage:{getItem:()=>null},fetch:globalThis.fetch};
+async function render(root){const {NetworkDesignPage}=await import(pathToFileURL(path.join(root,'src/pages/NetworkDesignPage.tsx')));return renderToString(React.createElement(NetworkDesignPage));}
+const original=await render(native);console.log('Native parameters rendered');const copy=await render(stage);console.log('Demo parameters rendered');
+assert.equal(copy,original,'First-step markup must be identical to the main project');
+for(const file of ['styles.css','modules.css','pages/NetworkDesignParameters.css','components/NetworkZoneCard.css','components/NetworkResultLayout.css','components/NetworkPlanning.css','components/NetworkParameterDetails.tsx','components/NetworkRunPassport.tsx','components/NetworkPlanningLab.tsx','components/NetworkPlanningDiagnostics.tsx','components/MapPanel.tsx'])assert.equal(await fs.readFile(path.join(stage,'src',file),'utf8'),await fs.readFile(path.join(native,'src',file),'utf8'),file);
+const page=await fs.readFile(path.join(stage,'src/pages/NetworkDesignPage.tsx'),'utf8');assert.ok(page.includes('preferredRunId'));assert.ok(page.includes('loadNetworkRun'));assert.ok(!page.includes('Шаг ${step} из 6'));
+console.log('Native two-step UI verified: exact first-step HTML, native styles and components, ready-report navigation to step 2.');
+const run=JSON.parse(await fs.readFile(path.join(stage,'.precompute/report-qa/two-step-run.json'),'utf8'));
+const props={run,activeResult:run.ensemble,resultViewId:'ensemble',selectedCandidateId:run.ensemble.scenarios[0]?.cell_id??null,reportSaving:false,reportSaved:true,reportError:null,resultStale:false,runError:null,onResultViewChange(){},onSelectCandidate(){},onEdit(){},onDownloadJson(){},onDownloadReport(){}};
+const originalResult=await import(pathToFileURL(path.join(native,'src/components/NetworkDesignResultView.tsx')));
+const demoResult=await import(pathToFileURL(path.join(stage,'src/components/NetworkDesignResultView.tsx')));
+const normalize=html=>html.replace(/<template[\s\S]*?<\/template>/g,'');
+assert.equal(normalize(renderToString(React.createElement(demoResult.NetworkDesignResultView,props))),normalize(renderToString(React.createElement(originalResult.NetworkDesignResultView,props))),'Native result workspace must be identical except the static report-storage notice');
+console.log('Native result verified against a real saved run; opening a ready report renders step 2.');

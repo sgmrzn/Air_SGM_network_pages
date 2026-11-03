@@ -1,0 +1,10 @@
+node_modules/
+dist/
+*.tsbuildinfo
+.env*
+scripts/.report-renderer.mjs
+__pycache__/
+*.pyc
+.precompute/
+scripts/.report-qa-renderer.mjs
+scripts/*.log

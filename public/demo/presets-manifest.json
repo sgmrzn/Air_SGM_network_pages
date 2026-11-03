@@ -1,0 +1,29 @@
+{
+  "configuration_count": 22320,
+  "parameter_groups": 1,
+  "base_catalog_count": 22320,
+  "cities": 12,
+  "placement_modes": 5,
+  "meteo_profiles": 6,
+  "analysis_profiles": 2,
+  "grids_km": [
+    1
+  ],
+  "radii_m": [
+    2500
+  ],
+  "network_size_modes": [
+    "required_network_size"
+  ],
+  "exclusion_masks": [
+    true
+  ],
+  "research_comparison_grids_km": [
+    1,
+    0.5
+  ],
+  "research_comparison_radii_m": [
+    2500,
+    5000
+  ]
+}

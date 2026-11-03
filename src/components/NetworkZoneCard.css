@@ -1,0 +1,199 @@
+/* Selected-zone inspector: all content must fit its grid column. */
+.network-design-page .network-planning-diagnostics {
+  margin-top: 16px;
+  padding: 16px;
+  border: 1px solid #dce3ec;
+  border-radius: 10px;
+  background: #fff;
+  overflow-x: auto;
+}
+.network-design-page .network-planning-diagnostics details { margin-top: 12px; }
+.network-design-page .network-planning-diagnostics summary { cursor: pointer; font-weight: 600; }
+.network-design-page .network-planning-diagnostics table { width: 100%; border-collapse: collapse; }
+.network-design-page .network-planning-diagnostics th,
+.network-design-page .network-planning-diagnostics td { padding: 8px; border-bottom: 1px solid #e7ebf1; text-align: left; }
+.network-design-page .network-planning-diagnostics code { overflow-wrap: anywhere; }
+.network-design-page .network-result-v4__workspace {
+  grid-template-columns: minmax(0, 1fr) minmax(0, 370px);
+}
+.network-design-page .network-wizard__shell.is-result .network-zone-card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  width: 100%;
+  overflow: hidden;
+  height: max(420px, calc(100dvh - 272px));
+  border-radius: 12px;
+}
+.network-design-page .network-zone-card > header {
+  position: static;
+  flex-shrink: 0;
+  min-height: 68px;
+  padding: 10px 14px;
+}
+.network-design-page .network-zone-card > header > div { min-width: 0; }
+.network-design-page .network-zone-card > header h3 { font-size: 17px; }
+.network-design-page .network-zone-card > header span { font-size: 10px; }
+.network-design-page .network-zone-card > header em { font-size: 9px; }
+.network-design-page .network-zone-card > header button { width: 30px; height: 30px; }
+.network-zone-card__body {
+  min-width: 0;
+  min-height: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #cbd8e8 transparent;
+  overscroll-behavior: contain;
+}
+.network-design-page .network-zone-card__body > section {
+  min-width: 0;
+  padding: 10px 14px;
+}
+.network-design-page .network-zone-card .network-result-v4__role > span,
+.network-design-page .network-zone-card .network-result-v4__profile h4,
+.network-design-page .network-zone-card .network-result-v4__scenario-panel > header > span {
+  font-size: 10px;
+  line-height: 1.4;
+}
+.network-design-page .network-zone-card .network-result-v4__role > div {
+  grid-template-columns: 20px minmax(0, 1fr);
+  gap: 3px 8px;
+  margin-top: 0;
+  padding: 7px 10px;
+  background: #f7fafc;
+}
+.network-design-page .network-zone-card .network-result-v4__role svg { grid-row: span 2; }
+.network-design-page .network-zone-card .network-result-v4__role strong {
+  font-size: 12px;
+  line-height: 1.4;
+}
+.network-design-page .network-zone-card .network-result-v4__role em {
+  grid-column: 2;
+  font-size: 10px;
+}
+.network-design-page .network-zone-card .network-result-v4__profile-bar { margin: 10px 0; }
+.network-design-page .network-zone-card .network-zone-card__factor-legend {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px 12px;
+}
+.network-design-page .network-zone-card .network-zone-card__factor-legend span {
+  display: grid;
+  min-width: 0;
+  grid-template-columns: 6px minmax(0, 1fr) auto;
+  font-size: 10px;
+}
+.network-design-page .network-zone-card .network-result-v4__scenario-panel { gap: 6px; }
+.network-design-page .network-zone-card .network-result-v4__scenario-panel select {
+  width: 100%;
+  min-width: 0;
+  height: 32px;
+  font-size: 11px;
+}
+.network-design-page .network-zone-card .network-result-v4__scenario-panel > header button { font-size: 10px; }
+.network-design-page .network-zone-card .compact-wind-rose {
+  min-width: 0;
+  margin: 0 !important;
+  padding: 0 !important;
+  gap: 12px;
+}
+.network-design-page .network-zone-card .compact-wind-rose__header { border: 0; padding: 0; }
+.network-design-page .network-zone-card .compact-wind-rose__header h4 {
+  color: #203b59;
+  font-size: 14px;
+  line-height: 1.4;
+}
+.network-design-page .network-zone-card .compact-wind-rose__viz-row {
+  min-width: 0;
+  grid-template-columns: minmax(0, 1fr) !important;
+  gap: 4px;
+}
+.network-design-page .network-zone-card .compact-wind-rose__chart {
+  min-width: 0;
+  width: 100%;
+  height: 190px;
+}
+.network-design-page .network-zone-card .compact-wind-rose__legend {
+  min-width: 0;
+  padding: 8px 0 12px;
+  border: 0;
+  border-bottom: 1px solid #e7edf4;
+  gap: 8px;
+}
+.network-design-page .network-zone-card .compact-wind-rose__legend > span { font-size: 10px; }
+.network-design-page .network-zone-card .compact-wind-rose__legend > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px 12px;
+}
+.network-design-page .network-zone-card .compact-wind-rose__legend i { font-size: 10px; }
+.network-design-page .network-zone-card .compact-wind-rose__legend .is-calm b { background: #cbd8e8; }
+.network-design-page .network-zone-card .compact-wind-rose__metrics {
+  grid-template-columns: minmax(0, 1.4fr) repeat(2, minmax(0, 1fr));
+}
+.network-design-page .network-zone-card .compact-wind-rose__metrics > div { gap: 5px; padding-inline: 8px; }
+.network-design-page .network-zone-card .compact-wind-rose__metrics > div:first-child { padding-left: 0; }
+.network-design-page .network-zone-card .compact-wind-rose__metrics span {
+  font-size: 10px;
+  white-space: normal;
+  line-height: 1.4;
+}
+.network-design-page .network-zone-card .compact-wind-rose__metrics strong { font-size: 16px; }
+.network-design-page .network-zone-card .compact-wind-rose__metrics em { font-size: 10px; line-height: 1.5; }
+.network-zone-card__wind-caption {
+  margin: 12px 0;
+  color: #75869c;
+  font-size: 10px;
+  line-height: 1.5;
+}
+.network-zone-card__wind-caption > span { font-weight: 700; }
+.network-zone-card__details {
+  min-width: 0;
+  border-top: 1px solid #e7edf4;
+  padding: 11px 0;
+  color: #526b85;
+  font-size: 11px;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+.network-zone-card__details summary { color: #365474; font-weight: 600; cursor: pointer; }
+.network-zone-card__details p { margin: 9px 0 0; }
+.network-zone-card__details > div { margin-top: 14px; }
+.network-zone-card__details .compact-wind-rose { margin-top: 10px !important; }
+@media (max-width: 1400px) and (min-width: 1091px) {
+  .network-design-page .network-result-v4__workspace { grid-template-columns: minmax(0, 1fr) minmax(0, 330px); }
+}
+@media (max-width: 1090px) {
+  .network-design-page .network-result-v4__workspace { grid-template-columns: minmax(0, 1fr); }
+  .network-design-page .network-wizard__shell.is-result .network-zone-card { height: auto; }
+  .network-zone-card__body { overflow: visible; }
+}
+
+.network-design-page .network-zone-card__factors summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #6d7e98;
+  font-size: 10px;
+  font-weight: 750;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.network-zone-card__factors summary svg { width: 13px; height: 13px; color: #357ae8; }
+.network-design-page .network-zone-card__factor-legend { display: grid; }
+.network-zone-card__factor-legend i { width: 6px; height: 6px; border-radius: 50%; }
+.network-zone-card__factor-legend i.is-population { background: #4c8ee8; }
+.network-zone-card__factor-legend i.is-industrial { background: #dd5f69; }
+.network-zone-card__factor-legend i.is-transport { background: #f3a329; }
+.network-zone-card__factor-legend i.is-urban { background: #23a7a2; }
+.network-design-page .network-zone-card__factors small {
+  display: block;
+  margin-top: 9px;
+  font-size: 10px;
+  line-height: 1.5;
+}
+.network-design-page .network-zone-card .compact-wind-rose__legend .is-calm { display: none; }
+
+.network-design-page .network-zone-card .compact-wind-rose__header { order: 1; }
+.network-design-page .network-zone-card .compact-wind-rose__metrics { order: 2; }
+.network-design-page .network-zone-card .compact-wind-rose__viz-row { order: 3; }
+.network-zone-card__factors[open] summary svg { transform: rotate(180deg); }

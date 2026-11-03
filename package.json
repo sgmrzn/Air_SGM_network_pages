@@ -1,0 +1,36 @@
+{
+  "name": "air-sgm-network-pages",
+  "private": true,
+  "version": "0.3.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "format": "prettier --write \"src/**/*.{ts,tsx,css}\"",
+    "format:check": "prettier --check \"src/**/*.{ts,tsx,css}\"",
+    "test": "npm run verify:data",
+    "prepare:reports": "node scripts/prepare_reports.mjs",
+    "finalize:data": "node scripts/finalize_modes.mjs",
+    "verify:data": "node scripts/verify_modes.mjs && npm run verify:inputs && npm run verify:options && npm run verify:names",
+    "verify:inputs": "node scripts/test_input_evidence.mjs",
+    "verify:options": "node --import ./scripts/native-ui-loader.mjs scripts/test_publication_options.mjs",
+    "verify:names": "node scripts/test_source_names.mjs"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "^6.0.1",
+    "echarts": "^6.1.0",
+    "lucide-react": "^1.24.0",
+    "maplibre-gl": "^5.24.0",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "vite": "^8.0.0"
+  },
+  "devDependencies": {
+    "@types/geojson": "^7946.0.16",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "prettier": "^3.5.3",
+    "typescript": "^5.9.3"
+  }
+}

@@ -1,0 +1,499 @@
+{
+  "version": "network-input-passport-v1",
+  "territory": {
+    "id": "osm-area-1782722",
+    "name": "Рязань",
+    "kind": "settlement",
+    "population": 528610.1514548701,
+    "bounds": {
+      "min_lon": 39.5366736,
+      "min_lat": 54.5286103,
+      "max_lon": 39.8995776,
+      "max_lat": 54.8120073
+    }
+  },
+  "vectors": {
+    "residential": {
+      "total": 681,
+      "spatial_counts": {
+        "inside": 328,
+        "crossing": 6,
+        "outside": 347,
+        "invalid": 0
+      },
+      "classes": [
+        {
+          "feature_type": "residential",
+          "count": 681,
+          "inside_count": 334,
+          "area_inside_km2": 24.59464672305898,
+          "length_inside_km": 0.0
+        }
+      ],
+      "territory_area_km2": 221.90639286107853,
+      "area_inside_km2": 24.59464672305898,
+      "area_percent": 11.083343028542725,
+      "length_inside_km": 0.0,
+      "hard_exclusion_area_km2": null,
+      "expert_review_area_km2": null,
+      "source_provenance": {
+        "record_count": 681,
+        "matched_record_count": 0,
+        "dated_record_count": 0,
+        "missing_record_count": 681,
+        "oldest_source_at": null,
+        "newest_source_at": null,
+        "oldest_imported_at": "2026-07-15T21:50:41.498214+00:00",
+        "newest_imported_at": "2026-07-15T22:04:38.116215+00:00",
+        "sources": [],
+        "note": "Дата снимка взята из заголовка PBF и привязана к версии импортированной записи. Дата загрузки не подтверждает актуальность OSM; отсутствующие или изменённые записи остаются без даты снимка."
+      },
+      "content_sha256": "ec3d07fee83da3ea0a9a84860fece3a1976a5d1b29428b41991f88f153ea6765",
+      "completeness": "not_assessed",
+      "selection": "bounding_rectangle",
+      "measurement_scope": "settlement_boundary_intersection",
+      "measurement_crs": "+proj=laea +lat_0=54.67025230 +lon_0=39.68844617 +datum=WGS84 +units=m +no_defs",
+      "method": "Площади объединённых контуров без двойного счёта пересечений; длины объединённых линейных объектов. Все измерения внутри границы поселения, в локальной равновеликой проекции LAEA (метры); длины приближённые. Периметры полигонов не считаются длинами дорог. Между классами площади и длины могут пересекаться: суммы классов не равны объединению слоя.",
+      "role": "Жилые территории и контуры жилых зданий поддерживают выбор кандидатных зон. Контур здания не подтверждает наличие площадки для поста.",
+      "selection_rule": "Текущий отбор: feature_type ∈ {residential, residential_building} из social_osm. Импортёр выделяет landuse=residential и building ∈ {house, detached, apartments, residential, semidetached_house, terrace, bungalow}. Сохранённые исходные теги отдельных старых объектов не восстанавливаются.",
+      "limitations": "Наличие объектов не подтверждает полноту картографирования или точность на местности. Невалидные геометрии не исправляются автоматически и исключены из карты и измерений. Дата импорта не является датой снимка OSM. Текущая выборка не является паспортом сохранённого расчёта."
+    },
+    "roads": {
+      "total": 1279,
+      "spatial_counts": {
+        "inside": 1171,
+        "crossing": 28,
+        "outside": 80,
+        "invalid": 0
+      },
+      "classes": [
+        {
+          "feature_type": "airport_osm",
+          "count": 3,
+          "inside_count": 1,
+          "area_inside_km2": 6.712341918209176,
+          "length_inside_km": 0.0
+        },
+        {
+          "feature_type": "railway_osm",
+          "count": 695,
+          "inside_count": 643,
+          "area_inside_km2": 0.0,
+          "length_inside_km": 385.11325115957914
+        },
+        {
+          "feature_type": "road_proxy_primary",
+          "count": 440,
+          "inside_count": 437,
+          "area_inside_km2": 0.0,
+          "length_inside_km": 124.30324258697787
+        },
+        {
+          "feature_type": "road_proxy_trunk",
+          "count": 141,
+          "inside_count": 118,
+          "area_inside_km2": 0.0,
+          "length_inside_km": 29.556071565700783
+        }
+      ],
+      "territory_area_km2": 221.90639286107853,
+      "area_inside_km2": 6.712341918209176,
+      "area_percent": 3.0248528812828503,
+      "length_inside_km": 538.972565312258,
+      "hard_exclusion_area_km2": null,
+      "expert_review_area_km2": null,
+      "source_provenance": {
+        "record_count": 1279,
+        "matched_record_count": 0,
+        "dated_record_count": 0,
+        "missing_record_count": 1279,
+        "oldest_source_at": null,
+        "newest_source_at": null,
+        "oldest_imported_at": "2026-10-01T09:22:15.309578+00:00",
+        "newest_imported_at": "2026-10-01T09:24:38.253634+00:00",
+        "sources": [],
+        "note": "Дата снимка взята из заголовка PBF и привязана к версии импортированной записи. Дата загрузки не подтверждает актуальность OSM; отсутствующие или изменённые записи остаются без даты снимка."
+      },
+      "content_sha256": "17efe239e7893aa09adf79e3599eae244ed7b1ebd631993bde62b9663fdc2fe9",
+      "completeness": "not_assessed",
+      "selection": "bounding_rectangle",
+      "measurement_scope": "settlement_boundary_intersection",
+      "measurement_crs": "+proj=laea +lat_0=54.67025230 +lon_0=39.68844617 +datum=WGS84 +units=m +no_defs",
+      "method": "Площади объединённых контуров без двойного счёта пересечений; длины объединённых линейных объектов. Все измерения внутри границы поселения, в локальной равновеликой проекции LAEA (метры); длины приближённые. Периметры полигонов не считаются длинами дорог. Между классами площади и длины могут пересекаться: суммы классов не равны объединению слоя.",
+      "role": "Магистрали, действующие железные дороги и аэропорты задают транспортное окружение. Интенсивность движения и концентрации не измеряются.",
+      "selection_rule": "Текущий отбор: road_proxy_*, railway_osm, airport_osm. Импортёр: highway=motorway/trunk/primary и их *_link; railway=rail/light_rail/narrow_gauge без флагов disused/abandoned/construction=yes; aeroway=aerodrome. Это не полный набор уличной сети.",
+      "limitations": "Наличие объектов не подтверждает полноту картографирования или точность на местности. Невалидные геометрии не исправляются автоматически и исключены из карты и измерений. Дата импорта не является датой снимка OSM. Текущая выборка не является паспортом сохранённого расчёта."
+    },
+    "constraints": {
+      "total": 3498,
+      "spatial_counts": {
+        "inside": 1469,
+        "crossing": 95,
+        "outside": 1934,
+        "invalid": 0
+      },
+      "classes": [
+        {
+          "feature_type": "protected_area",
+          "count": 1,
+          "inside_count": 0,
+          "area_inside_km2": 0.0,
+          "length_inside_km": 0.0
+        },
+        {
+          "feature_type": "restricted_land",
+          "count": 2775,
+          "inside_count": 1215,
+          "area_inside_km2": 71.30030872977619,
+          "length_inside_km": 0.0
+        },
+        {
+          "feature_type": "water",
+          "count": 722,
+          "inside_count": 349,
+          "area_inside_km2": 7.379201535695452,
+          "length_inside_km": 0.0
+        }
+      ],
+      "territory_area_km2": 221.90639286107853,
+      "area_inside_km2": 78.5219704899057,
+      "area_percent": 35.38517727114933,
+      "length_inside_km": 0.0,
+      "hard_exclusion_area_km2": 78.5219704899057,
+      "expert_review_area_km2": 0.0,
+      "source_provenance": {
+        "record_count": 3498,
+        "matched_record_count": 0,
+        "dated_record_count": 0,
+        "missing_record_count": 3498,
+        "oldest_source_at": null,
+        "newest_source_at": null,
+        "oldest_imported_at": "2026-08-07T16:12:40.520729+00:00",
+        "newest_imported_at": "2026-08-07T16:39:08.518058+00:00",
+        "sources": [],
+        "note": "Дата снимка взята из заголовка PBF и привязана к версии импортированной записи. Дата загрузки не подтверждает актуальность OSM; отсутствующие или изменённые записи остаются без даты снимка."
+      },
+      "content_sha256": "581d01d6d38e5c5b22318e5298af6ffcbcca40bc2a17a63541a337c0e1f134c4",
+      "completeness": "not_assessed",
+      "selection": "bounding_rectangle",
+      "measurement_scope": "settlement_boundary_intersection",
+      "measurement_crs": "+proj=laea +lat_0=54.67025230 +lon_0=39.68844617 +datum=WGS84 +units=m +no_defs",
+      "method": "Площади объединённых контуров без двойного счёта пересечений; длины объединённых линейных объектов. Все измерения внутри границы поселения, в локальной равновеликой проекции LAEA (метры); длины приближённые. Периметры полигонов не считаются длинами дорог. Между классами площади и длины могут пересекаться: суммы классов не равны объединению слоя.",
+      "role": "Исключающие маски применяются при включённом учёте ограничений. ООПТ без явного запрета относятся к экспертной проверке, а не к автоматическому исключению.",
+      "selection_rule": "Текущий отбор: группа network_constraints. Классы импортёра: water (водоёмы), protected_area (ООПТ), restricted_land (включая леса, сельхозугодья, промышленные и транспортные территории). Это правила предварительного пространственного отбора, а не юридическое подтверждение запретов.",
+      "limitations": "Наличие объектов не подтверждает полноту картографирования или точность на местности. Невалидные геометрии не исправляются автоматически и исключены из карты и измерений. Дата импорта не является датой снимка OSM. Текущая выборка не является паспортом сохранённого расчёта."
+    }
+  },
+  "population": {
+    "status": "ready",
+    "label": "Население",
+    "required": true,
+    "dataset": {
+      "id": "population-dbed347450c44efc94dda58acab586d5",
+      "name": "R2025A v1",
+      "original_filename": "rus_pop_2025_CN_100m_R2025A_v1.tif",
+      "stored_path": "data\\sources\\population\\population-dbed347450c44efc94dda58acab586d5.tif",
+      "source_url": "https://data.worldpop.org/GIS/Population/Global_2015_2030/R2025A/2025/RUS/v1/100m/constrained/rus_pop_2025_CN_100m_R2025A_v1.tif",
+      "license": null,
+      "reference_year": 2025,
+      "size_bytes": 584600298,
+      "sha256": "0c1a93b3508700acdd8df276ce65a8b60c5a53b9e797f02a169a569ec0fc4a31",
+      "format": "GeoTIFF/COG",
+      "is_active": true,
+      "created_at": "2026-07-15T00:57:32.525813+03:00"
+    },
+    "quality": {
+      "valid_pixels": 32660,
+      "inside_pixels": 44461,
+      "nodata_pixels": 11801,
+      "invalid_pixels": 0,
+      "extent_covers_boundary": true,
+      "valid_percent": 73.45763703020624,
+      "nodata_percent": 26.542362969793754,
+      "status": "ready",
+      "population": 528610.1514548701,
+      "aggregation": "sum_pixel_centres_inside_territory",
+      "note": "Модельная численность WorldPop внутри выбранной границы"
+    },
+    "dataset_fingerprint": "c1df065c3cec722cdfb8d544889b6c2a700569aa342397a37ccfe769f64128d9",
+    "source_provenance": {
+      "kind": "worldpop",
+      "version": "recorded-input-provenance-v1",
+      "record_count": 1,
+      "dated_record_count": 0,
+      "missing_record_count": 1,
+      "oldest_source_at": null,
+      "newest_source_at": null,
+      "newest_imported_at": "2026-07-14T21:57:32.525813+00:00",
+      "date_semantics": "source_snapshot_date",
+      "fingerprint": "b5db9119aa185d36d615cfa8d8967fef848ff2adbe1b899987599f51f1911559",
+      "sources": [
+        {
+          "id": "population-dbed347450c44efc94dda58acab586d5",
+          "name": "R2025A v1",
+          "source_url": "https://data.worldpop.org/GIS/Population/Global_2015_2030/R2025A/2025/RUS/v1/100m/constrained/rus_pop_2025_CN_100m_R2025A_v1.tif",
+          "sha256": "0c1a93b3508700acdd8df276ce65a8b60c5a53b9e797f02a169a569ec0fc4a31",
+          "reference_year": 2025,
+          "created_at": "2026-07-15T00:57:32.525813+03:00",
+          "source_snapshot_at": null,
+          "source_date": null,
+          "imported_at": "2026-07-14T21:57:32.525813+00:00",
+          "source_version": "0c1a93b3508700acdd8df276ce65a8b60c5a53b9e797f02a169a569ec0fc4a31"
+        }
+      ]
+    }
+  },
+  "meteo": {
+    "status": "ready",
+    "label": "ERA5: доступные версии обработки",
+    "required": false,
+    "record_count": 7,
+    "source_provenance": {
+      "kind": "era5",
+      "version": "recorded-input-provenance-v1",
+      "record_count": 7,
+      "dated_record_count": 0,
+      "missing_record_count": 7,
+      "oldest_source_at": null,
+      "newest_source_at": null,
+      "newest_imported_at": "2026-07-31T08:54:37.432952+00:00",
+      "date_semantics": "source_snapshot_date",
+      "fingerprint": "6585df92f14eec8e6492c3d5ad3f898ba353d963e4b779e0d91161894a9be70f",
+      "sources": [
+        {
+          "id": "era5-russia-2019-01-01-2019-12-31-v1",
+          "dataset": "ECMWF/ERA5/HOURLY",
+          "period_start": "2019-01-01",
+          "period_end": "2019-12-31",
+          "processing_version": "era5-national-checkpoint-v2",
+          "created_at": "2026-07-12T00:52:55.962604+03:00",
+          "completed_at": "2026-07-13T00:00:00+03:00",
+          "source_snapshot_at": null,
+          "source_date": null,
+          "imported_at": "2026-07-11T21:52:55.962604+00:00",
+          "source_version": "era5-national-checkpoint-v2"
+        },
+        {
+          "id": "era5-russia-2020-01-01-2020-12-31-v3",
+          "dataset": "ECMWF/ERA5/HOURLY",
+          "period_start": "2020-01-01",
+          "period_end": "2020-12-31",
+          "processing_version": "era5-native-tiles-fixed-histogram-v3",
+          "created_at": "2026-07-20T01:56:35.992686+03:00",
+          "completed_at": "2026-07-20T00:00:00+03:00",
+          "source_snapshot_at": null,
+          "source_date": null,
+          "imported_at": "2026-07-19T22:56:35.992686+00:00",
+          "source_version": "era5-native-tiles-fixed-histogram-v3"
+        },
+        {
+          "id": "era5-russia-2021-01-01-2021-12-31-v3",
+          "dataset": "ECMWF/ERA5/HOURLY",
+          "period_start": "2021-01-01",
+          "period_end": "2021-12-31",
+          "processing_version": "era5-native-tiles-fixed-histogram-v3",
+          "created_at": "2026-07-21T01:12:35.526194+03:00",
+          "completed_at": "2026-07-22T00:00:00+03:00",
+          "source_snapshot_at": null,
+          "source_date": null,
+          "imported_at": "2026-07-20T22:12:35.526194+00:00",
+          "source_version": "era5-native-tiles-fixed-histogram-v3"
+        },
+        {
+          "id": "era5-russia-2023-01-01-2023-12-31-v3",
+          "dataset": "ECMWF/ERA5/HOURLY",
+          "period_start": "2023-01-01",
+          "period_end": "2023-12-31",
+          "processing_version": "era5-native-tiles-fixed-histogram-v3",
+          "created_at": "2026-07-31T01:28:25.294477+03:00",
+          "completed_at": "2026-08-01T00:00:00+03:00",
+          "source_snapshot_at": null,
+          "source_date": null,
+          "imported_at": "2026-07-30T22:28:25.294477+00:00",
+          "source_version": "era5-native-tiles-fixed-histogram-v3"
+        },
+        {
+          "id": "era5-russia-2022-01-01-2022-12-31-v3",
+          "dataset": "ECMWF/ERA5/HOURLY",
+          "period_start": "2022-01-01",
+          "period_end": "2022-12-31",
+          "processing_version": "era5-native-tiles-fixed-histogram-v3",
+          "created_at": "2026-07-31T11:54:37.432952+03:00",
+          "completed_at": "2026-08-01T00:00:00+03:00",
+          "source_snapshot_at": null,
+          "source_date": null,
+          "imported_at": "2026-07-31T08:54:37.432952+00:00",
+          "source_version": "era5-native-tiles-fixed-histogram-v3"
+        },
+        {
+          "id": "era5-russia-2024-01-01-2024-12-31-v3",
+          "dataset": "ECMWF/ERA5/HOURLY",
+          "period_start": "2024-01-01",
+          "period_end": "2024-12-31",
+          "processing_version": "era5-native-tiles-fixed-histogram-v3",
+          "created_at": "2026-07-31T03:31:24.712299+03:00",
+          "completed_at": "2026-08-02T00:00:00+03:00",
+          "source_snapshot_at": null,
+          "source_date": null,
+          "imported_at": "2026-07-31T00:31:24.712299+00:00",
+          "source_version": "era5-native-tiles-fixed-histogram-v3"
+        },
+        {
+          "id": "era5-russia-2025-01-01-2025-12-31-v3",
+          "dataset": "ECMWF/ERA5/HOURLY",
+          "period_start": "2025-01-01",
+          "period_end": "2025-12-31",
+          "processing_version": "era5-native-tiles-fixed-histogram-v3",
+          "created_at": "2026-07-31T05:31:09.977574+03:00",
+          "completed_at": "2026-08-03T00:00:00+03:00",
+          "source_snapshot_at": null,
+          "source_date": null,
+          "imported_at": "2026-07-31T02:31:09.977574+00:00",
+          "source_version": "era5-native-tiles-fixed-histogram-v3"
+        }
+      ]
+    },
+    "note": "Каталог доступных версий. Период наблюдений не является датой публикации. Использованная версия розы ветров сохраняется в контексте конкретного сценария.",
+    "dataset_fingerprint": "6585df92f14eec8e6492c3d5ad3f898ba353d963e4b779e0d91161894a9be70f"
+  },
+  "local_meteo": {
+    "status": "available",
+    "requested_period": {
+      "months": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "years": [
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "speed_min_mps": null,
+      "speed_max_mps": null,
+      "stored_partition": "monthly",
+      "exact_month_aggregation": true,
+      "available_months": [
+        "2021-01",
+        "2021-02",
+        "2021-03",
+        "2021-04",
+        "2021-05",
+        "2021-06",
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-01",
+        "2022-02",
+        "2022-03",
+        "2022-04",
+        "2022-05",
+        "2022-06",
+        "2022-07",
+        "2022-08",
+        "2022-09",
+        "2022-10",
+        "2022-11",
+        "2022-12",
+        "2023-01",
+        "2023-02",
+        "2023-03",
+        "2023-04",
+        "2023-05",
+        "2023-06",
+        "2023-07",
+        "2023-08",
+        "2023-09",
+        "2023-10",
+        "2023-11",
+        "2023-12",
+        "2024-01",
+        "2024-02",
+        "2024-03",
+        "2024-04",
+        "2024-05",
+        "2024-06",
+        "2024-07",
+        "2024-08",
+        "2024-09",
+        "2024-10",
+        "2024-11",
+        "2024-12",
+        "2025-01",
+        "2025-02",
+        "2025-03",
+        "2025-04",
+        "2025-05",
+        "2025-06",
+        "2025-07",
+        "2025-08",
+        "2025-09",
+        "2025-10",
+        "2025-11",
+        "2025-12"
+      ],
+      "missing_months": [],
+      "expected_hours": 43824,
+      "coverage_percent": 100.0
+    },
+    "dataset": {
+      "dataset_version_id": null,
+      "dataset": "ECMWF/ERA5/HOURLY",
+      "period_start": "2021-01-01",
+      "period_end": "2025-12-31",
+      "calm_threshold_mps": 0.5,
+      "dataset_version_ids": [
+        "era5-russia-2021-01-01-2021-12-31-v3",
+        "era5-russia-2022-01-01-2022-12-31-v3",
+        "era5-russia-2023-01-01-2023-12-31-v3",
+        "era5-russia-2024-01-01-2024-12-31-v3",
+        "era5-russia-2025-01-01-2025-12-31-v3"
+      ]
+    },
+    "aggregation": {
+      "scope": "territory",
+      "method": "intersection_area_weighted_frequencies",
+      "area_model": "spherical_equal_area",
+      "spatial_coverage_percent": 99.99905668303131,
+      "grid_resolution_degrees": 0.25,
+      "count_unit": "area_weighted_hours",
+      "near_peak_threshold_percentage_points": 0.5
+    },
+    "cell_count": 5
+  },
+  "boundary": {
+    "status": "ready",
+    "label": "Граница населённого пункта",
+    "required": true,
+    "source": "osm-geofabrik-russia",
+    "dataset_fingerprint": "e8f4057e28b9c8886ed4edcba1805eab8cbfab3f6ca28818a7a7a94ec2a39133",
+    "source_provenance": {
+      "record_count": 1,
+      "matched_record_count": 0,
+      "dated_record_count": 0,
+      "missing_record_count": 1,
+      "oldest_source_at": null,
+      "newest_source_at": null,
+      "oldest_imported_at": "2026-07-13T21:47:35.400115+00:00",
+      "newest_imported_at": "2026-07-13T21:47:35.400115+00:00",
+      "sources": [],
+      "note": "Дата снимка взята из заголовка PBF и привязана к версии импортированной записи. Дата загрузки не подтверждает актуальность OSM; отсутствующие или изменённые записи остаются без даты снимка."
+    }
+  },
+  "scope": "published_input_snapshot_not_saved_run",
+  "snapshot_exported_at": "2026-10-26T11:52:03.094320+00:00"
+}

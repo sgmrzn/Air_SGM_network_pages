@@ -1,0 +1,111 @@
+{
+  "version": "source-names-ru-v1",
+  "verified_at": "2026-10-27",
+  "scope": "Russian display names for the Ryazan published source registry; no record merging or calculation changes",
+  "rules": [
+    {
+      "name_ru": "Дягилевская ТЭЦ",
+      "aliases": [
+        "Diaghilevskaya power station"
+      ],
+      "source_url": "https://tambov.rirenergy.ru/about/",
+      "basis": "official_name"
+    },
+    {
+      "name_ru": "Михайловский цементный завод («Михайловцемент»)",
+      "aliases": [
+        "Mikhaylovcement Cement Plant"
+      ],
+      "source_url": "https://cemros.ru/about/geography/factories/mikhaylovtsement/",
+      "basis": "official_name"
+    },
+    {
+      "name_ru": "Ново-Рязанская ТЭЦ",
+      "aliases": [
+        "Novo-Ryazan power station"
+      ],
+      "source_url": "https://www.nrtec.ru/",
+      "basis": "official_name"
+    },
+    {
+      "name_ru": "Рязанская ГРЭС",
+      "aliases": [
+        "Ryazanskaya GRES power station"
+      ],
+      "source_url": "https://ogk2.ru/proizvodstvo-i-realizatsiya/energosbytovaya-deyatelnost/raskrytie-informatsii-po-filialam/",
+      "basis": "official_name"
+    },
+    {
+      "name_ru": "Серебрянский цементный завод",
+      "aliases": [
+        "Serebryansky Cement Plant"
+      ],
+      "source_url": "https://cemros.ru/about/geography/factories/serebryanskiy-tsementnyy-zavod/",
+      "basis": "official_name"
+    },
+    {
+      "name_ru": "РНПК · Рязанская нефтеперерабатывающая компания",
+      "aliases": [
+        "TNK-BP Ryazan Refinery"
+      ],
+      "source_url": "https://www.rosneft.ru/about/Glance/OperationalStructure/Pererabotka/rnpk/",
+      "basis": "official_name"
+    },
+    {
+      "name_ru": "Завод высокопрочного крепежа «Бервел»",
+      "aliases": [
+        "BERVEL"
+      ],
+      "source_url": "https://bervel.ru/about/",
+      "basis": "official_name"
+    },
+    {
+      "name_ru": "Завод «Доширак Рязань»",
+      "aliases": [
+        "Doshirak"
+      ],
+      "source_url": "https://www.doshirak.com/contacts/",
+      "basis": "official_name"
+    },
+    {
+      "name_ru": "Мебельная фабрика «Риваль»",
+      "aliases": [
+        "Мебельная фабрика \"Rival\""
+      ],
+      "source_url": "https://spassk-ryazanskij.spravmer.ru/mebelnaya-fabrika-rival-spassk-ryazanskij/",
+      "basis": "russian_brand_spelling"
+    },
+    {
+      "name_ru": "Мебельная фабрика «Фрейлинг»",
+      "aliases": [
+        "Мебельная фабрика \"Frayling\""
+      ],
+      "source_url": "https://sprax.ru/firms/69831-freyling-fabrika",
+      "basis": "transliteration_of_osm_name_not_operator_verification"
+    },
+    {
+      "name_ru": "ГРЭС-24 (Рязанская ГРЭС)",
+      "aliases": [
+        "Ryazan-24 Power Plant"
+      ],
+      "source_url": "https://ryazgres.ru/history/",
+      "basis": "russian_name_of_registry_object_not_record_merge"
+    },
+    {
+      "name_ru": "Завод автохимии «АГ-Тех»",
+      "aliases": [
+        "AG Tech"
+      ],
+      "source_url": "https://mediaryazan.ru/articles/detail/557266.html",
+      "basis": "manufacturer_interview_and_address"
+    },
+    {
+      "name_ru": "Московско-Казанский исторический ход",
+      "aliases": [
+        "Московcко-Казанский исторический ход"
+      ],
+      "source_url": "https://www.openstreetmap.org/way/1187601485",
+      "basis": "latin_c_typo_correction"
+    }
+  ]
+}
